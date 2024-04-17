@@ -128,3 +128,8 @@ app.delete("/habits/:habitId", async (req, res) => {
     res.status(500).json({ error: "Unable to delete the habit" });
   }
 });
+
+
+app.get("/test", async (req,res) =>{
+  res.json("Hello")
+} )
